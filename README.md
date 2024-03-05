@@ -9,4 +9,4 @@ Ogni membro è caratterizzato dalle seguenti informazioni: nome, ruolo e foto.
 2. Seleziono l'elemento HTML a cui saranno aggiunte le carte generate.
 3. Ciclo di Generazione delle Carte
 4. Visualizzazione delle Carte Generate
-5. 
+

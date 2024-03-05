@@ -3,7 +3,7 @@ const team = [
   {
       name: "Wayne Barnett",
       job: "Founder & CEO",
-      photo: "wayne-barnett-founder-ceo"
+      photo: "wayne-barnett-founder-ceo.jpg"
   },
   {
       name: "Angela Caroll",
@@ -32,3 +32,27 @@ const team = [
   }
 ];
 
+// element html 
+
+const row = document.querySelector(".row")
+
+// ciclo cards 
+
+let cards = "";
+for (let i = 0; i < team.length; i++) {
+    const teamer = team [i];
+    cards += `
+            <div class="col-4 g-4">
+                <div class="card text-center">
+                    <img src="img/${teamer.photo}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5>${teamer.name}</h5>
+                        <h6>${teamer.job}</h6>
+                    </div>
+                </div>
+            </div>
+            `
+}
+// ... 
+console.log(cards)
+row.innerHTML = cards;
